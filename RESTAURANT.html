@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> reservation form </title>
+<style>
+    @media screen and (max-width: 768px) {
+  /* قواعد CSS للأجهزة الصغيرة مثل الهواتف */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* قواعد CSS للأجهزة المتوسطة مثل الأجهزة اللوحية */
+}
+
+@media screen and (min-width: 1025px) {
+  /* قواعد CSS للأجهزة الكبيرة مثل الشاشات الكبيرة */
+}
+
+#container{
+background-size: 2000px;
+  width: 100%;
+  height: 100%;
+  position:absolute ;
+  top: 0;
+  z-index: 0;
+  display: flexbox;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+    }
+
+#one{
+    background-color:black;
+    color:rgb(10, 9, 9);
+    font-size: 50px;
+    height: fit-content;
+}
+#two{
+    float: left;
+    
+    }
+#three{
+    float: right;
+    background-image: url("5.jpg");
+    width:62.2%;
+    height: 800px;
+  
+}
+#four {
+        background-color:black;
+        word-spacing: 30px;
+        border-radius: 10%;
+        font-size: 20px;
+        padding-left: 70px;
+    }
+    a:link{
+        color: white;
+text-decoration: none; 
+    }
+    a:hover{
+color: blueviolet;
+
+    }
+    a:active{
+color: brown;
+    }
+    a:visited{
+        color: aquamarine;
+    }
+#image1{
+    opacity: 50%;
+    
+}
+#image1:hover{
+    opacity: 100%;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+#image2{
+    opacity: 50%;
+
+
+    
+   
+    
+}
+#image2:hover{
+    opacity: 100%;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+#image3{
+    opacity: 50%;
+    padding-top: 100px;
+
+    
+   
+    
+}
+#image3:hover{
+    opacity: 100%;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}#image4{
+    opacity: 50%;
+    padding-left: 0px;
+padding-top:100px ;
+    
+   
+    
+}
+#image4:hover{
+    opacity: 100%;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+.table-style{
+            margin: auto;
+}
+
+    </style>
+</head>
+<body onload=display_ct();>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <span id='ct' ></span>
+    <div id="container">
+
+    <div id="one">
+        <img src= "4.jpg" alt="" height="100px" width="500px" >
+    </div>
+    <div id="four">
+        <nav>
+            <a href="about.html">AboutUs</a>
+        </nav>
+        </div>
+    <div id="two">
+        <img src= "1.jpg" alt="" height="800px" width="700px"  >
+    </div>
+    <div id="three">
+        <a href="breakfast.html">  <img id="image4" src="images (1).jfif" height="200px" width="200px">
+        </a>
+        <a href="lunch.html">  <img id="image3" src="photo_2022-12-24_15-12-11.jpg" height="200px" width="200px">
+        </a>
+        <a href="dinner.html">  <img id="image1" src="WhatsApp Image 2022-12-21 at 6.46.41 PM.jpeg" height="200px" width="200px">
+        </a>
+        <a href="BOOK YOUR TABLE.html"> 
+            <img id="image2" src="3.jpg" height="200px" width="200px">
+        </a>
+    </div>
+    <script>
+        function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+         }
+         
+         function display_ct() {
+           var CDate = new Date()
+           var NewDate=CDate.toDateString(); 
+           NewDate = NewDate + " - " + CDate.toLocaleTimeString();
+           document.getElementById('ct').innerHTML = NewDate;
+           display_c();
+         }
+        </script>
+            <script>
+            Fname = prompt("Enter your first name:", "");
+            Lname = prompt("Enter your last name:", "");
+            alert("welcome"+"  " +Fname + " " + Lname);
+        </script>
+         </div>
+</body

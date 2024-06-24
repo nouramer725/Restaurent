@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>lunch menu </title>
+    <style>
+        #one {
+            display: flex;
+            flex-direction: column;
+            padding-top: 35%;
+            padding-bottom: 10%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-image: url("WhatsApp Image 2022-12-21 at 5.22.22 PM.jpeg");
+            background-size: cover;
+            font-size: 30PX;
+        }
+        .table-style{
+            margin: auto;
+        }
+    
+       
+    </style>
+    </head>
+    <body style="">
+        <div id="one">
+            <table class="table-style">
+                <th><em>lunch</em></th>
+    
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <th>pizza</th>
+                                <tr><td>chicken-pizza</td><td>$80</td></tr>
+                                <tr><td>meat-pizza</td><td>$100</td></tr>
+                                <tr><td>Potato-pizza </td><td>$90</td></tr>
+                                <tr><td>tona-pizza </td><td>$85</td></tr>
+                                <tr><td>Neapolitan-Pizza </td><td>$99</td></tr>
+                                <tr><td>Chicago-Pizza </td><td>$96</td></tr>
+                                <tr><td>Sicilian-Pizza </td><td>$93</td></tr>
+                                <tr><td>Sicilian-Pizza </td><td>$88</td></tr>
+                                <tr><td>Greek-Pizza </td><td>$76</td></tr>
+                            </table> 
+                        </td>
+                        <td>
+                            <img src="photo_2022-12-22_12-29-05.jpg" alt="" width="200px"> <img src="Screenshot 2022-12-22 123312.png" alt="" width="200px">
+                        </td>
+                    </tr>
+                </table>
+            <br><br>
+                <table>
+                    <tr><td>
+                        <table>
+                    <th> Main-Dishes</th>
+                    <tr><td>cordonblu</td><td>$100</td></tr>
+                    <tr><td>pasta</td><td>$110</td></tr>
+                    <tr><td>burger</td><td>$150</td></tr>
+                    <tr><td>seafood</td><td>$180</td></tr>
+                    <tr><td>steak</td><td>$120</td></tr>
+                    <tr><td>Mixed-Arabic-meat</td><td>$184</td></tr>
+                    <tr><td> Cheese-and-meat-board</td><td>$126</td></tr>
+                    <tr><td> Vegetarian-mezze-platter</td><td>$129</td></tr>
+                    <tr><td> Vien-leaves</td><td>100</td></tr>
+                    </table></td>
+                    <td>  <div>
+                        <img class="slideshow" src="images (2).jfif" width="200px">
+                        <img class="slideshow" src="download (2).jfif" width="200px"> 
+                        <img class="slideshow" src="photo_2022-12-22_12-51-30.jpg" width="200px">
+                        <img class="slideshow" src="images.jfif" width="200px">
+                    </div>
+                    <script>
+                        index=0
+                        slideshow()
+                        function slideshow (){
+                x=document.getElementsByClassName("slideshow")
+                for(i=0;i<x.length;i++)
+                x[i].style.display="none"
+                if(index >x.length-1) index=0
+                x[index].style.display="block"
+                index++;
+                setTimeout(slideshow,2000)
+                        }
+                    </script>
+                    </td>
+                    </tr>
+                    
+            
+                </table>
+            </table>
+            <br>
+    <a href="RESTAURANT.html"><input type="submit" value="home page"></a>
+    </div>
+    </body>
+    </html>
